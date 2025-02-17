@@ -4,14 +4,34 @@
   method="POST"
 >
   <label>
-    Your email:
-    <input type="email" name="email">
+    Your Name:
+    <input type="text" name="name" required>
   </label>
   <label>
-    Your message:
-    <textarea name="message"></textarea>
+    Your Email:
+    <input type="email" name="email" required>
   </label>
-  <!-- your other form fields go here -->
+  <label>
+    Subject:
+    <input type="text" name="subject">
+  </label>
+  <label>
+    Your Message:
+    <textarea name="message" required></textarea>
+  </label>
+  <label>
+    How did you hear about us?
+    <select name="referral">
+      <option value="">Select an option</option>
+      <option value="friend">Friend</option>
+      <option value="search">Search Engine</option>
+      <option value="social">Social Media</option>
+      <option value="other">Other</option>
+    </select>
+  </label>
+  <label>
+    Subscribe to our newsletter:
+    <input type="checkbox" name="subscribe">
+  </label>
   <button type="submit">Send</button>
 </form>
-
